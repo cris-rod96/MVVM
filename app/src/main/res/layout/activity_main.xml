@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.MainActivity"
+    android:background="@color/background"
+    android:id="@+id/viewContainer"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Hello World!"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:fontFamily="@font/baumans"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            />
+
+        <ImageView
+            android:id="@+id/movieAvatar"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/content_movie"
+            />
+
+        <TextView
+            android:id="@+id/tvDirector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:fontFamily="@font/baumans"
+            tools:text="James Cmaeron"
+            android:layout_marginTop="30dp"
+            android:textStyle="italic"
+            />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        />
+
+
+</LinearLayout>
